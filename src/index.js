@@ -14,7 +14,7 @@ import './index.css';
 //     );
 //   }
 // }
-
+const num=10;
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
