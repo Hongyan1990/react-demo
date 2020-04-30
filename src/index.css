@@ -48,3 +48,15 @@ ol, ul {
 .game-info {
   margin-left: 20px;
 }
+
+.active {
+  color: red;
+}
+
+.pane-active {
+  display: block;
+}
+
+.pane-hidden {
+  display: none;
+}
