@@ -29,51 +29,51 @@ function Context() {
 }
 
 export default class App extends Component {
-	constructor(props) {
-		super(props);
+	// constructor(props) {
+	// 	super(props);
 		
-		this.toggleTheme = () => {
-			console.log(12)
-			this.setState(state => ({
-				theme: state.theme === theme.dark 
-					? theme.light : theme.dark
-			}))
-		}
-		this.state = {
-			theme: theme.light,
-			toggleTheme: this.toggleTheme
-		};
-	}
+	// 	this.toggleTheme = () => {
+	// 		console.log(12)
+	// 		this.setState(state => ({
+	// 			theme: state.theme === theme.dark 
+	// 				? theme.light : theme.dark
+	// 		}))
+	// 	}
+	// 	this.state = {
+	// 		theme: theme.light,
+	// 		toggleTheme: this.toggleTheme
+	// 	};
+	// }
 
-	handleClick(e) {
-		console.log(e)
-	}
+	// handleClick(e) {
+	// 	console.log(e)
+	// }
 
-	componentDidMount() {
-		this.refs.button.addEventListener('click', e => {
-			this.handleClick(e)
-		})
-	}
+	// componentDidMount() {
+	// 	this.refs.button.addEventListener('click', e => {
+	// 		this.handleClick(e)
+	// 	})
+	// }
 
-	componentWillUnmount() {
-		this.refs.button.removeEventListener('click');
-	}
+	// componentWillUnmount() {
+	// 	this.refs.button.removeEventListener('click');
+	// }
 
-	handleBtnClick() {
-		console.log('themed button')
-	}
+	// handleBtnClick() {
+	// 	console.log('themed button')
+	// }
 
-	handleToggle() {
-		this.setState(state => ({
-			theme: state.theme === theme.dark 
-				? theme.light : theme.dark
-		}))
-	}
+	// handleToggle() {
+	// 	this.setState(state => ({
+	// 		theme: state.theme === theme.dark 
+	// 			? theme.light : theme.dark
+	// 	}))
+	// }
 
 	render() {
 		return (
 			<div>
-				<Tabs defaultActiveIndex={0}>
+				{/*<Tabs defaultActiveIndex={0}>
 					<TabPane key={0} order={0} tab={'Tab 1'}>第一个 Tab 里的内容</TabPane>
 				 	<TabPane key={1} order={1} tab={'Tab 2'}>第二个 Tab 里的内容</TabPane>
 				 	<TabPane key={2} order={2}  tab={'Tab 3'}>第三个 Tab 里的内容</TabPane>
@@ -82,7 +82,7 @@ export default class App extends Component {
 				<br/>
 				<button ref="button">nativeEvent</button>
 				<Forms />
-				{/*<ThemedButton onClick={this.handleBtnClick.bind(this)}>themed button</ThemedButton>*/}
+				<ThemedButton onClick={this.handleBtnClick.bind(this)}>themed button</ThemedButton>
 				<Toolbar></Toolbar>
 				<ThemeContext.Provider value={this.state.theme}>
 					<Toolbar onToggle={this.handleToggle.bind(this)}></Toolbar>
@@ -92,7 +92,7 @@ export default class App extends Component {
 				</ThemeContext.Provider>
 
 				<hr/>
-				<MyComponent placeholder="xxxx" />
+				<MyComponent placeholder="xxxx" />*/}
 			</div>
 		)
 	}
