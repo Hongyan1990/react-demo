@@ -7,6 +7,7 @@ import ThemeTogglerButton from './theme-toggler-button';
 import {ThemeContext, theme} from './theme-context';
 import MyComponent from './HocDemo';
 import MyTodo from './Todos/components/MyTodos.js'
+import MyBooks from './Books/MyBooks.js'
 // <Tabs classPrefix={'tabs'} defaultActiveIndex={0}>
 // 	<TabPane key={0} tab={'Tab 1'}>第一个 Tab 里的内容</TabPane>
 // 	<TabPane key={1} tab={'Tab 2'}>第二个 Tab 里的内容</TabPane>
@@ -93,8 +94,10 @@ export default class App extends Component {
 				</ThemeContext.Provider>
 
 				<hr/>
-				<MyComponent placeholder="xxxx" />*/}
+				<MyComponent placeholder="xxxx" />
 				<MyTodo />
+				*/}
+				<MyBooks />
 			</div>
 		)
 	}
