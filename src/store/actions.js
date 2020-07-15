@@ -71,9 +71,9 @@ export function getBooks(select) {
 	return dispatch => {
 		dispatch(postRequest(select))
 		return db.getTodos(select)
-				.then(data => {
-					dispatch(postRecive(data, select))
-				})
+			.then(data => {
+				dispatch(postRecive(data, select))
+			})
 	}
 }
 
